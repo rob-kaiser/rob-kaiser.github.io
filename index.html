@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Rob Kaiser</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<nav>
+		<ul class="topnav" id="dropdownClick">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li class="topnav-right"><a href="contact">Contact</a></li>
+			<li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+		</ul>
+	</nav>
+
+	<div class="container" id="section-1-gradient">
+		<div class="row">
+			<div class="col-6">
+				<div class="leftside-col">
+				<h1 class="large">Rob Kaiser</h1>
+				<h2 class="medium">About Me</h2>
+				<p>I currently live and work in Columbus, Ohio.  I have been spending my nights and weekends learning to code at We Can Code It. I have always been interested in software development but didn't know how to get started. Luckily I found this program and in a few months my life has changed drastically. Life has been a challenge but I feel fulfilled because I learn something new everyday.</p>
+				</div>
+			</div>	
+			<div class="col-6"> 
+				<div class="rightside-col">
+					<div class="videoContainer">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/n6zKqoTsbjw" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="leftside-col-6">
+			<h3 class="projects">Projects</h3>
+			<div id = "githubProjects"></div>
+		</div>	
+	</div>
+	<div class="col-6"> 
+		<div class="rightside-col-6">
+			<img class="picOfMe" src="images/me.jpg">
+		</div>
+	</div>
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="main.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#githubProjects").loadRepositories("rob-kaiser");
+    });
+</script>
+ <footer>
+
+      <h2 id="Contact">Contact Me</h2>  
+
+      <a href="mailto:rob.kaiser22@gmail.com"><img src="images/email.png" alt="icon"  style="width:48px; height:48px;"></a>
+
+      <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="icon" style="width:48px; height:48px;"></a>
+
+      <a href="https://github.com/rob-kaiser" target="_blank"><img src="images/github.png" alt="icon" style="width:48px; height:48px;"></a>
+
+      <p>Copyright © Rob Kaiser 2017</p>
+
+    </footer>
+</body>	
+
+</html>

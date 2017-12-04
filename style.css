@@ -1,0 +1,211 @@
+nav,
+header,
+footer {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.row::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+nav {
+	width: 100%;
+	margin: 0;
+}
+
+nav ul {
+	background-color: #333;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+ul.topnav li {
+	list-style: none;
+	float: left;
+}
+
+ul.topnav li.topnav-right {
+	float: right;
+}
+
+ul.topnav li a {
+	display: block;
+	text-decoration: none;
+	min-height: 16px;
+	text-align: center;
+	padding: 14px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+ul.topnav li a:hover {
+	background-color: #808080;
+	color: #F5F5F5;
+
+}
+
+ul.topnav li.dropdownIcon {
+	display: none;
+}
+
+#section-1-gradient {
+	  background: #708090; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#708090, #D3D3D3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#708090, #D3D3D3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#708090, #D3D3D3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#708090, #D3D3D3); /* Standard syntax */
+}
+
+div.leftside-col {
+margin-left: 30%;
+}
+
+div.rightside-col {
+margin-left: 3%
+}
+
+h1.large {
+	color: #fff;
+	font-size: 76px;
+	margin: 0;
+}
+
+h2.medium {
+	color: #fff;
+	font-size: 38px;
+	margin: 0;
+	padding-top: 30px; 
+}
+
+div.leftside-col p {
+	color: #fff;
+	margin: 0;
+	font-size: 18px;
+	padding-right: 22px;
+	padding-top: 15px;
+}
+
+div.leftside-col-6 {
+	font-size: 20px;
+	color: #333;
+	margin-left: 22%;
+}
+
+div.leftside-col-6 h3 {
+	font-size: 38px;
+	color: #333;
+}
+
+img.picOfMe {
+	max-height: 300px;
+	max-width: 300px;
+	margin-left: 20%;
+}
+
+#githubProjects {
+    font-size: 18px;
+    color: #333;
+    display: block;
+}
+
+div.leftside-col p {
+	color: #fff;
+	margin: 0;
+	font-size: 18px;
+	padding-right: 22px;
+	padding-top: 15px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+	ul.topnav li:not(:nth-child(1)) {
+		display: none;
+	}
+
+	ul.topnav li.dropdownIcon {
+		display: block;
+		float: right;
+	}
+
+	ul.topnav.responsive li.dropdownIcon {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	ul.topnav.responsive {
+		position: relative;
+	}
+
+	ul.topnav.responsive li {
+		display: inline;
+		float: none;
+	}
+
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+
+	.col-6 {
+		width: 100%;
+		margin: 0;
+	}
+
+	div.leftside-col,
+	div.rightside-col {
+		margin: 15px;
+	}
+
+	.videoContainer iframe {
+		position: relative;
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+}
+
+
